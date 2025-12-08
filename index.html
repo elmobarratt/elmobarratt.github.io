@@ -147,7 +147,7 @@
       <div class="container">
          <!-- Sidebar -->
          <div class="sidebar">
-            <img src="IMG_1437.jpeg" alt="Elmo Barratt">
+            <img src="Figures/IMG_1437.jpeg" alt="Elmo Barratt">
             <h1>Elmo Barratt</h1>
             <p>MSci Mathematics Graduate<br>University of Bristol</p>
             <a href="mailto:elmobarratt@gmail.com">Gmail</a>
@@ -213,17 +213,22 @@
                   <p>In this project I independently investigated a meta-heuristic Ant Colony Optimisation (ACO) algorithm for finding approximate solutions to the shortest Hamiltonian cycle on a complete random Euclidean graph. In addition to proving theoretical results about the convergence and stopping times, this required extensive use of python to build and optimise the algorithm, run simulations, and statistically analyse the simulated data. This vastly improved my statistical capability using packages such as Scipy, Numpy, Matplotlib and Pandas to manipulate vast datasets, make predictions using nonlinear regression and test their validity using a variety of statistical confidence tests. This project therefore provided me with practical experience in probabilistic modelling, optimisation, and statistical validation. I further investigated the capability of based neural networks to further my project. Overall, I was awarded a <b>grade of 81%</b>. During the viva <a href="https://github.com/elmobarratt/Ant-Colony-Optimisation/blob/123f6b31cdc1b78b1926be022cabe23d4067891a/Presentation/ACO%20Presentation.pptx">presentation</a>, the examiner remarked this was <I>"perhaps the best Masters presentation she had seen".</I>
                   </p>
                   </p>
+                  <center> <video width="300" height="300" controls>
+                    <source src="Figures/PheromoneAnimation.mp4" type="video/mp4">
+                  </video>
+                  <video width="300" height="300" controls>  <source src="Figures/AnimationSave.mp4" type="video/mp4">
+                  </video></center>
                </div>
                <div class="collapsible">LIF Spiking Neural Network to Simulate EEG-like Extracellular Fields</div>
                <div class="content">
                   <p><a href="https://github.com/elmobarratt/LIF-Extracellular-Potentials">Github Repo</a> </p>
                   <br>
                   <p>I built a leaky integrate-and-fire (LIF) spiking neural network on a random Euclidean graph to simulate stable, EEG-like extracellular fields. Using the 3D spatiotemporal activity tensor (2D space × time), I trained convolutional neural networks in tensorflow.keras to infer structural properties of the underlying graph. The model successfully recovered the spatial connectivity constant with high confidence, demonstrating that CNNs can extract latent connectivity features directly from simulated extracellular field dynamics. Future work on this would include synaptic plasticity to dynamically change the weights connecting neurones as the simulation evolves.</p>
+                  <center><img src="Figures/animation-10169.gif" alt="Electric Field Animation" loop=infinite></img></centre>
                </div>
                <div class="collapsible">Local Learning Rules for Kolmogorov–Arnold Networks (KANs)</div>
                <div class="content">
-                  <a href="https://github.com/elmobarratt/KAN">Github Repo</a><br>
-                  <p><I>Developing biologically inspired, synaptically local training algorithms for spline-based neural architectures.</I></p>
+                  <a href="https://github.com/elmobarratt/KAN">Github Repo</a><br><br>
                   <p>I am investigating how to train Kolmogorov–Arnold Networks (KANs) using local learning rules rather than global backpropagation. KANs represent each synapse as a learnable univariate spline, giving them strong interpretability and naturally local parameterisation, yet their training remains fully dependent on global gradients.</p>
                   <br>
                   <p>The project explores three complementary directions:</p>
@@ -232,11 +237,9 @@
                      <li><b>Temporal and causal structure via spiking mechanisms:</b> I incorporate ideas from STDP and spiking neural networks to give KANs a temporal learning rule. By treating spline activations as continuous dendritic responses modulated by spike timing, the model can learn unsupervised structure in temporal or event-based data.</li>
                      <li><b>Local Bayesian updates for uncertainty-aware KANs:</b> I design local approximate Bayesian updates where each spline coefficient maintains a simple prior and performs inner-loop local inference, providing uncertainty estimates.</li>
                   </ul>
+                  <center><img src="Figures/spline_grad_search.gif" alt="B-Spline Optimisation using gradient descent" loop=infinite></img></centre>
                </div>
-               <div class="collapsible">Bayesian Inference for B-Spline Learning</div>
-               <div class="content">
-                  <p>Details about the method, experiments, and insights.</p>
-               </div>
+               
             </section>
             <!-- Research -->
             <section id="research">
@@ -245,7 +248,7 @@
                <p><b>Neural Dynamics:</b> Mathematical and computational models of evolving neural representations, mechanisms balancing stability and plasticity, spiking-neural networks. Regular attendee of the Gatsby Computational Neuroscience Institute (UCL) <a href="https://www.ucl.ac.uk/life-sciences/gatsby/about">external seminars</a>.</p>
                <p><b>Probabilistic Theory of Machine Learning:</b> Bayesian inference, Variational Autoencoders, Bayesian Plasticity, uncertainty quantification and emergent properties of stochastic networks.</p>
                <p><b>Alternative Machine Learning Fundamentals:</b> Limitation of multi-layer perceptrons, viability of Kolmogorov-Arnold Networks as arbitrary functional approximations.</p>
-               <p><b>Emergent Complexity in Agentic Systems:</b> Iterated Function Systems, Ant Colony Optimisation</p>
+               <p><b>Emergent Complexity in Agentic Systems:</b> Iterated Function Systems, Ant Colony Optimisation.</p>
             </section>
             <footer>
                &copy; 2025 Elmo Barratt
